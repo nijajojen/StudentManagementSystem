@@ -1,0 +1,132 @@
+delete from menu_role_map where id = 1;
+delete from menu_role_map where id = 2;
+delete from menu_role_map where id = 3;
+delete from dept_role_map where id = 1;
+delete from dept_role_map where id = 2;
+delete from dept_role_map where id = 3;
+delete from dept_role_map where id = 4;
+delete from dept_role_map where id = 5;
+delete from dept_role_map where id = 6;
+delete from dept_role_map where id = 7;
+delete from dept_role_map where id = 8;
+delete from dept_role_map where id = 9;
+delete from dept_role_map where id = 10;
+delete from dept_role_map where id = 11;
+delete from user_department_map where id = 1;
+delete from user_department_map where id = 2;
+delete from user_department_map where id = 3;
+delete from user_department_map where id = 4;
+delete from user_department_map where id = 5;
+delete from department where id = 1;
+delete from department where id = 2;
+delete from department where id = 3;
+delete from department where id = 4;
+delete from department where id = 5;
+delete from user where id = 1;
+delete from role where id = 1;
+delete from role where id = 2;
+delete from role where id = 3;
+delete from role where id = 4;
+delete from role where id = 5;
+delete from role where id = 6;
+delete from role where id = 7;
+delete from role where id = 8;
+delete from role where id = 9;
+delete from role where id = 10;
+delete from role where id = 11;
+delete from menu where id = 1;
+delete from skill_mst where id = 1;
+delete from skill_mst where id = 2;
+delete from skill_mst where id = 3;
+delete from skill_mst where id = 4;
+delete from skill_mst where id = 5;
+delete from visa_mst where id = 1;
+delete from visa_mst where id = 2;
+delete from visa_mst where id = 3;
+delete from visa_mst where id = 4;
+delete from visa_mst where id = 5;
+delete from visa_mst where id = 6;
+delete from visa_mst where id = 7;
+delete from visa_mst where id = 8;
+delete from visa_mst where id = 9;
+delete from visa_mst where id = 10;
+delete from status_mst where id = 1;
+delete from status_mst where id = 2;
+delete from status_mst where id = 3;
+delete from status_mst where id = 4;
+delete from status_mst where id = 5;
+delete from status_mst where id = 6;
+delete from source_mst where id = 1;
+delete from source_mst where id = 2;
+insert into user(id,name,username,password,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(1,'Arpit','admin',MD5('admin'),'Y','admin','admin',NOW(),NOW(),'N');
+insert into department (id,department_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(1,'HR','Y','admin','admin',NOW(),NOW(),'N');
+insert into department (id,department_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(2,'Account','Y','admin','admin',NOW(),NOW(),'N');
+insert into department (id,department_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(3,'Training','Y','admin','admin',NOW(),NOW(),'N');
+insert into department (id,department_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(4,'Recruitment','Y','admin','admin',NOW(),NOW(),'N');
+insert into department (id,department_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(5,'Sales','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(1,'HR Manager','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(2,'HR Executive','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(3,'Account Manager','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(4,'Account Executive','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(5,'Training Manager','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(6,'Training Executive','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(7,'Recruitment Manager','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(8,'Recruitment Executive','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(9,'Recruitment Team Lead','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(10,'Sales Manager','Y','admin','admin',NOW(),NOW(),'N');
+insert into role(id,role_name,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(11,'Sales Executive','Y','admin','admin',NOW(),NOW(),'N');
+insert into menu(id,menu_name,menu_url,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(1,'Recruitment','recruitment','Y','admin','admin',NOW(),NOW(),'N');
+insert into user_department_map(id,dept_id,user_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(1,1,1,'Y','admin','admin',NOW(),NOW(),'N');
+insert into user_department_map(id,dept_id,user_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(2,2,1,'Y','admin','admin',NOW(),NOW(),'N');
+insert into user_department_map(id,dept_id,user_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(3,3,1,'Y','admin','admin',NOW(),NOW(),'N');
+insert into user_department_map(id,dept_id,user_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(4,4,1,'Y','admin','admin',NOW(),NOW(),'N');
+insert into user_department_map(id,dept_id,user_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(5,5,1,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(1,1,1,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(2,1,2,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(3,2,3,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(4,2,4,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(5,3,5,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(6,3,6,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(7,4,7,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(8,4,8,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(9,4,9,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(10,5,10,'Y','admin','admin',NOW(),NOW(),'N');
+insert into dept_role_map(id,dept_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(11,5,11,'Y','admin','admin',NOW(),NOW(),'N');
+insert into menu_role_map(id,menu_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(1,1,7,'Y','admin','admin',NOW(),NOW(),'N');
+insert into menu_role_map(id,menu_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(2,1,8,'Y','admin','admin',NOW(),NOW(),'N');
+insert into menu_role_map(id,menu_id,role_id,active_flag,created_by,modified_by,created_date,modified_date,delete_flag) values(3,1,9,'Y','admin','admin',NOW(),NOW(),'N');
+insert into skill_mst(id,skill_name) values(1,'Java');
+insert into skill_mst(id,skill_name) values(2,'.Net');
+insert into skill_mst(id,skill_name) values(3,'BA');
+insert into skill_mst(id,skill_name) values(4,'QA');
+insert into skill_mst(id,skill_name) values(5,'SQL');
+insert into visa_mst(id,visa_name) values(1,'EAD');
+insert into visa_mst(id,visa_name) values(2,'OPT');
+insert into visa_mst(id,visa_name) values(3,'CPT');
+insert into visa_mst(id,visa_name) values(4,'H1B');
+insert into visa_mst(id,visa_name) values(5,'GC');
+insert into visa_mst(id,visa_name) values(6,'USC');
+insert into visa_mst(id,visa_name) values(7,'L2 EAD');
+insert into visa_mst(id,visa_name) values(8,'H4-EAD');
+insert into visa_mst(id,visa_name) values(9,'GC-EAD');
+insert into visa_mst(id,visa_name) values(10,'TPS EAD');
+insert into status_mst(id,status_name) values(1,'VM');
+insert into status_mst(id,status_name) values(2,'Not Interested');
+insert into status_mst(id,status_name) values(3,'Interested');
+insert into status_mst(id,status_name) values(4,'Partial-Interested');
+insert into status_mst(id,status_name) values(5,'Pipeline');
+insert into status_mst(id,status_name) values(6,'Enrolled');
+insert into source_mst(id,source_name) values(1,'Job Portal');
+insert into source_mst(id,source_name) values(2,'Reference');
+
+
+
+
+
+
+
+
+
+
+
+
